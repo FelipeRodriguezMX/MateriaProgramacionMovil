@@ -1,0 +1,65 @@
+.btn-chg1{
+    background-color: white;
+    color:red;
+    border: 1px auto;
+    font-size: 14;
+    font-family: "robotoBold",Arial,helvetica;
+    border-color: rgb(20,29,37);
+}
+.btn-chg2{
+    background-color: rgb(204,0,0);
+    color:white;
+    border: 1px auto;
+    font-size: 14;
+    font-family: "robotoBold",Arial,helvetica;
+}
+.btn-chg1:hover{
+    background-color: rgb(20,29,37);
+    color:white;
+}
+.btn-chg2:hover{
+    background-color: rgb(20,29,37);
+    color:white;
+}
+.nvsize{
+    padding: 1px;
+    background-color: rgb(204, 0, 0);
+}
+.dropdown-menu{
+    background-color: rgb(20,29,37,0.95);
+}	
+
+div.dropdown-multicol>div.dropdown-col{
+    padding-left: 15px;
+    
+}
+.dropdown-title{
+    font-size: 18px;
+    font-family: "robotoBold",Arial,helvetica;
+    color: #5d6d7e;
+    margin-bottom: 8px;
+}
+.dropdown-title2{
+    color: #fff;
+    font-family: "robotoBold",Arial,helvetica;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+
+}
+.dropdown-text{
+    font-family: "robotoRegular",Arial,sans-serif,helvetica;
+    font-size: 13px;
+    color: #aeb6bf;
+    margin-bottom: 5px;
+}
+.dropdown-title2:hover,.dropdown-text:hover{
+    color: rgb(204,0,0);
+}
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+    .dropdown-multicol{width: 50em;}
+    .dropdown-col{display: inline-block; width: 22%;}
+}
