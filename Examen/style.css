@@ -63,7 +63,7 @@ div.dropdown-multicol>div.dropdown-col{
     .dropdown-multicol{width: 50em;}
     .dropdown-col{display: inline-block; width: 22%;}
 }
-.pub{
+.pubconfg{
     font-family: "robotoRegular",Arial,sans-serif,helvetica;
     font-size: 10px;
     text-align: center;
