@@ -68,3 +68,25 @@ div.dropdown-multicol>div.dropdown-col{
     font-size: 10px;
     text-align: center;
 }
+.htext{
+    font-size: 12px;
+    color: black;
+}
+.htext:hover{
+    color: rgb(204,0,0);
+}
+.list-group-item{
+    background-color: rgb(248, 249, 250);
+    border-color: rgb(248, 249, 250);
+    font-size: 12px;
+    color: rgb(40, 40, 40);
+    padding: 2px;
+}
+.listtext{
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+}
+.listtext:hover{
+    color: rgb(40, 40, 40);
+    text-decoration: underline;
+}
