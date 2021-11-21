@@ -1,4 +1,4 @@
-const URL = 'http://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=spain&api_key=API-KEY&format=json'
+const URL = 'http://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=spain&api_key=cba1e463f436dc39237df6d5d3c24c29&format=json'
 
 function getMusicData() {
   return fetch(`${URL}`, {

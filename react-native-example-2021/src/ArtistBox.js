@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View , Image} from 'react-native';
 
-export default class ArtistBox extends Component<Props> {
+export default class ArtistBox extends Component<Props>{
 
   render() {
     const {image, name} = this.props.artist

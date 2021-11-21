@@ -1,30 +1,30 @@
 Arguments: 
-  /Users/ramses7083/.asdf/installs/nodejs/14.15.1/bin/node /Users/ramses7083/.asdf/installs/nodejs/14.15.1/.npm/bin/yarn add react-native-react-native-safe-area-context
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add package-react-native-screens@3.8.0
 
 PATH: 
-  /Users/ramses7083/.asdf/installs/nodejs/14.15.1/bin:/Users/ramses7083/.asdf/installs/nodejs/14.15.1/.npm/bin:/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:/Users/ramses7083/.asdf/shims:/usr/local/opt/asdf/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+  C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\Yarn\bin\;C:\Ruby30-x64\bin;C:\Users\brand\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\brand\AppData\Local\Programs\Python\Python39\;C:\Users\brand\AppData\Local\Microsoft\WindowsApps;C:\Users\brand\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\brand\AppData\Roaming\npm;C:\Users\brand\dart-sass;C:\Users\brand\AppData\Local\Yarn\bin
 
 Yarn version: 
   1.22.15
 
 Node version: 
-  14.15.1
+  16.10.0
 
 Platform: 
-  darwin x64
+  win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/react-native-react-native-safe-area-context: Not found
-      at Request.params.callback [as _callback] (/Users/ramses7083/.asdf/installs/nodejs/14.15.1/.npm/lib/node_modules/yarn/lib/cli.js:66140:18)
-      at Request.self.callback (/Users/ramses7083/.asdf/installs/nodejs/14.15.1/.npm/lib/node_modules/yarn/lib/cli.js:140885:22)
-      at Request.emit (events.js:315:20)
-      at Request.<anonymous> (/Users/ramses7083/.asdf/installs/nodejs/14.15.1/.npm/lib/node_modules/yarn/lib/cli.js:141857:10)
-      at Request.emit (events.js:315:20)
-      at IncomingMessage.<anonymous> (/Users/ramses7083/.asdf/installs/nodejs/14.15.1/.npm/lib/node_modules/yarn/lib/cli.js:141779:12)
-      at Object.onceWrapper (events.js:421:28)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1327:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+  Error: https://registry.yarnpkg.com/package-react-native-screens: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66140:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140885:22)
+      at Request.emit (node:events:390:28)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141857:10)
+      at Request.emit (node:events:390:28)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141779:12)
+      at Object.onceWrapper (node:events:509:28)
+      at IncomingMessage.emit (node:events:402:35)
+      at endReadableNT (node:internal/streams/readable:1343:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
 
 npm manifest: 
   {
@@ -37,7 +37,9 @@ npm manifest:
       "eject": "expo eject"
     },
     "dependencies": {
+      "@react-native-community/masked-view": "^0.1.11",
       "@react-navigation/native": "^6.0.6",
+      "deprecated-react-native-listview": "^0.0.7",
       "expo": "~43.0.0",
       "expo-status-bar": "~1.1.0",
       "react": "17.0.1",
@@ -1401,6 +1403,11 @@ Lockfile:
       sudo-prompt "^9.0.0"
       wcwidth "^1.0.1"
   
+  "@react-native-community/masked-view@^0.1.11":
+    version "0.1.11"
+    resolved "https://registry.yarnpkg.com/@react-native-community/masked-view/-/masked-view-0.1.11.tgz#2f4c6e10bee0786abff4604e39a37ded6f3980ce"
+    integrity sha512-rQfMIGSR/1r/SyN87+VD8xHHzDYeHaJq6elOSCAD+0iLagXkSI2pfA0LmSXP21uw5i3em7GkkRjfJ8wpqWXZNw==
+  
   "@react-native/assets@1.0.0":
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/@react-native/assets/-/assets-1.0.0.tgz#c6f9bf63d274bafc8e970628de24986b30a55c8e"
@@ -2324,7 +2331,7 @@ Lockfile:
       js-yaml "^3.13.1"
       parse-json "^4.0.0"
   
-  create-react-class@^15.7.0:
+  create-react-class@*, create-react-class@^15.7.0:
     version "15.7.0"
     resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.7.0.tgz#7499d7ca2e69bb51d13faf59bd04f0c65a1d6c1e"
     integrity sha512-QZv4sFWG9S5RUvkTYWbflxeZX+JG7Cz0Tn33rQBJ+WFQTqTfUTjMjiv9tnfXazjsO5r0KhPs+AqCjyrQX6h2ng==
@@ -2437,6 +2444,16 @@ Lockfile:
     version "1.1.2"
     resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
     integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
+  
+  deprecated-react-native-listview@^0.0.7:
+    version "0.0.7"
+    resolved "https://registry.yarnpkg.com/deprecated-react-native-listview/-/deprecated-react-native-listview-0.0.7.tgz#781c9e4f6b4c52d8887cc0328e5a1936ae0a0a21"
+    integrity sha512-l0lWjpU70MlHF0Sy/xi1I6vQkb5tatXKag5iSbXmEKh9g8ZqUbdlP9wGTy5g3GQc5qqaUYAf6mIY5CtkN5BStQ==
+    dependencies:
+      create-react-class "*"
+      fbjs "*"
+      invariant "*"
+      react-clone-referenced-element "*"
   
   destroy@~1.0.4:
     version "1.0.4"
@@ -2754,7 +2771,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/fbjs-css-vars/-/fbjs-css-vars-1.0.2.tgz#216551136ae02fe255932c3ec8775f18e2c078b8"
     integrity sha512-b2XGFAFdWZWg0phtAWLHCk836A1Xann+I+Dgd3Gk64MHKZO44FfoD1KxyvbSh0qZsIoXQGGlVztIY+oitJPpRQ==
   
-  fbjs@^0.8.4:
+  fbjs@*, fbjs@^0.8.4:
     version "0.8.18"
     resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.18.tgz#9835e0addb9aca2eff53295cd79ca1cfc7c9662a"
     integrity sha512-EQaWFK+fEPSoibjNy8IxUtaFOMXcWsY0JaVrQoZR9zC8N2Ygf9iDITPWjUTVIax95b6I742JFLqASHfsag/vKA==
@@ -3207,7 +3224,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
     integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
   
-  invariant@^2.2.2, invariant@^2.2.4:
+  invariant@*, invariant@^2.2.2, invariant@^2.2.4:
     version "2.2.4"
     resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
     integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -4774,6 +4791,11 @@ Lockfile:
     version "1.2.1"
     resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
     integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
+  
+  react-clone-referenced-element@*:
+    version "1.1.1"
+    resolved "https://registry.yarnpkg.com/react-clone-referenced-element/-/react-clone-referenced-element-1.1.1.tgz#8d76727dc0459788e461741e804a512d20757381"
+    integrity sha512-LZBPvQV8W0B5dFzXFu+D3Tpil8YHS8tO00iFsfXcTLdtpuH7XyvaHqHcoz4hd4uNPQCZ30fceh+s7mLznzMXvg==
   
   react-devtools-core@^4.6.0:
     version "4.21.0"
