@@ -6,12 +6,21 @@ export default class LoginView extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      text1: "Ramses"
+      usuario :"",
+      contrasena:""
     }
   }
+  onChangeUser = usuario => this.setState({ usuario });
+
+  onChangeContrasena = contrasena => this.setState({ contrasena });
 
   getLogin = () => {
-    Actions.home({text1: this.state.text1})
+    if (this.state.usuario == ""  && this.state.contrasena == ""){
+
+    }
+    else{
+      Actions.home({user: this.state.user})
+    }
   }
 
   render() {
@@ -20,10 +29,13 @@ export default class LoginView extends Component {
         <TextInput 
         style={styles.input}
         placeholder= "usuario"
+        onChangeText = {this.onChangeUser}
         />
         <TextInput
         style={styles.input}
         placeholder= "contraseña"
+        onChangeText = {this.onChangeContrasena}
+        secureTextEntry={true}
         />
         <Button
           onPress={this.getLogin}
