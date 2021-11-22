@@ -1,48 +1,39 @@
 import React, {Component} from 'react';
-import { StyleSheet, Button, View, TextInput } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import {Actions} from 'react-native-router-flux'
+import Btn from './components/atoms/button';
+import TextField from './components/atoms/input';
 
 export default class LoginView extends Component {
   constructor(props) {
     super(props)
     this.state = {
       usuario :"",
-      contrasena:""
+      contrasena:"",
+      emptyUsr: false,
+      emptyContrasena: false,
     }
   }
-  onChangeUser = usuario => this.setState({ usuario });
-
-  onChangeContrasena = contrasena => this.setState({ contrasena });
-
+  onChangeUser = (usuario) => this.setState({ usuario: usuario });
+  
+  onChangeContrasena = (contrasena) => this.setState({ contrasena: contrasena});
+  
+  isEmptyUsr = (bool) => this.setState({emptyUsr: bool});
+  isEmptyContrasena = (bool) => this.setState({emptyContrasena: bool});
   getLogin = () => {
-    if (this.state.usuario == ""  && this.state.contrasena == ""){
-
-    }
-    else{
-      Actions.home({user: this.state.user})
+    (this.state.usuario.trim() == "") ? this.isEmptyUsr(true):this.isEmptyUsr(false);
+    (this.state.contrasena.trim() == "") ? this.isEmptyContrasena(true):this.isEmptyContrasena(false);
+    if(this.state.usuario != "" && this.state.contrasena != ""){
+      Actions.home({user: this.state.usuario})
     }
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <TextInput 
-        style={styles.input}
-        placeholder= "usuario"
-        onChangeText = {this.onChangeUser}
-        />
-        <TextInput
-        style={styles.input}
-        placeholder= "contraseña"
-        onChangeText = {this.onChangeContrasena}
-        secureTextEntry={true}
-        />
-        <Button
-          onPress={this.getLogin}
-          title="Login"
-          color="#841584"
-          accessibilityLabel="Login button"
-        />
+        <TextField placeholder={'Usuario'} secureTextEntry={false} isvalid={this.state.emptyUsr} textOnChange={this.onChangeUser}/>
+        <TextField placeholder={'Contraseña'} secureTextEntry={true} isvalid={this.state.emptyContrasena} textOnChange={this.onChangeContrasena}/>
+        <Btn title={'Login'} color={'#841584'} accessibilityLabelBtn={'Login button'} exeFunction={this.getLogin}/>
       </View>
     );
   }
@@ -54,12 +45,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  input:{
-    height: 40,
-    width:260,
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
   },
 });

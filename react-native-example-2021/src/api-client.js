@@ -1,7 +1,7 @@
 const URL = 'http://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=spain&api_key=cba1e463f436dc39237df6d5d3c24c29&format=json'
 
-function getMusicData() {
-  return fetch(`${URL}`, {
+const getMusicData = () => {
+  return fetch(URL, {
     method: 'GET',
     headers: {
       Accept: 'application/json',

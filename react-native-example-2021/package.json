@@ -13,15 +13,18 @@
     "deprecated-react-native-listview": "^0.0.7",
     "expo": "~43.0.0",
     "expo-status-bar": "~1.1.0",
-    "react": "17.0.1",
+    "react": "17.0.2",
     "react-dom": "17.0.1",
-    "react-native": "0.64.2",
+    "react-hook-form": "^7.20.2",
+    "react-native": "0.66.3",
+    "react-native-form-validator": "^0.5.1",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-reanimated": "^2.2.3",
     "react-native-router-flux": "^4.3.1",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "~3.8.0",
-    "react-native-web": "0.17.1"
+    "react-native-web": "0.17.1",
+    "validate.js": "^0.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
