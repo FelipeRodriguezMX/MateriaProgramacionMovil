@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Image } from 'react-native';
 import {Actions} from 'react-native-router-flux'
 import Btn from './components/atoms/button';
 import TextField from './components/atoms/input';
@@ -31,6 +31,7 @@ export default class LoginView extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <Image style={styles.image} source={require('./musical.jpg')}></Image>
         <TextField placeholder={'Usuario'} secureTextEntry={false} isvalid={this.state.emptyUsr} textOnChange={this.onChangeUser}/>
         <TextField placeholder={'Contraseña'} secureTextEntry={true} isvalid={this.state.emptyContrasena} textOnChange={this.onChangeContrasena}/>
         <Btn title={'Login'} color={'#841584'} accessibilityLabelBtn={'Login button'} exeFunction={this.getLogin}/>
@@ -46,4 +47,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  image:{
+    width: 200,
+    height: 200,
+    borderRadius: 10
+  }
 });
